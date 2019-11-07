@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+
+options(pins.progress=FALSE)
+```
+
+# datatxt
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+datatxt provides utilities for working with the `data.txt` specification.
+Currently, it provides a function, `narrate()`, that enables automatic
+generation of data documentation.
+
+## Installation
+
+You can install the development version of datatxt with
+
+``` r
+# install.packages("remotes")
+remotes::install_github("datatxtorg/datatxt")
+```
+
+## Example
+
+We can generate data documentation by passing the URL of the `data.txt` to
+`narrate()`:
+
+```{r example, message=FALSE, progress = FALSE}
+library(datatxt)
+
+temp_dir <- tempdir()
+narrate("https://datatxt.org/data.txt", output_dir = temp_dir)
+
+list.files(temp_dir)
+```
+
+We can then inspect the contents of one of these files:
+
+```{r warning=FALSE}
+cat(readLines(file.path(temp_dir, "iris.md")), sep = "\n")
+```
