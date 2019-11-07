@@ -1,0 +1,22 @@
+Package: datatxt
+Type: Package
+Title: Tools for the 'data.txt' Specification
+Version: 0.1.0
+Authors@R: c(
+    person("Kevin", "Kuo", role = c("aut", "cre"), email = "kevin.kuo@rstudio.com",
+           comment = c(ORCID = "0000-0001-7803-7901"))
+    )
+Description: Automated data documentation generation for 'data.txt'.
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    magrittr,
+    purrr,
+    urltools,
+    glue,
+    pins,
+    yaml,
+    skimr,
+    fs
