@@ -23,7 +23,7 @@ options(pins.progress=FALSE)
 
 datatxt provides utilities for working with the `data.txt` specification.
 Currently, it provides a function, `narrate()`, that enables automatic
-generation of data documentation.
+generation of data documentation. See [https://datatxtdoc.netlify.com/](https://datatxtdoc.netlify.com/) for an example.
 
 ## Installation
 

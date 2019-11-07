@@ -11,7 +11,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 datatxt provides utilities for working with the `data.txt`
 specification. Currently, it provides a function, `narrate()`, that
-enables automatic generation of data documentation.
+enables automatic generation of data documentation. See
+<https://datatxtdoc.netlify.com/> for an example.
 
 ## Installation
 
