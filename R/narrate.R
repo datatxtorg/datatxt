@@ -38,6 +38,8 @@ title: {title}
 
 ## Description
 
+Identifier: `{dataset$name}`
+
 {dataset$description}
     ")
 
